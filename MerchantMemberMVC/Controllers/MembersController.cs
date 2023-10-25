@@ -49,7 +49,7 @@ namespace MerchantMemberMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Address,Age,Email,Phone,MerchantId,CreatedDate,UpdatedTime,Status")] Member member)
+        public ActionResult Create([Bind(Include = "Id,Name,Address,Age,Email,Phone,MerchantId,CreatedDate,UpdatedDate,Status")] Member member)
         {
             if (ModelState.IsValid)
             {
@@ -84,7 +84,7 @@ namespace MerchantMemberMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Address,Age,Email,Phone,MerchantId,CreatedDate,UpdatedTime,Status")] Member member)
+        public ActionResult Edit([Bind(Include = "Id,Name,Address,Age,Email,Phone,MerchantId,CreatedDate,UpdatedDate,Status")] Member member)
         {
             if (ModelState.IsValid)
             {
